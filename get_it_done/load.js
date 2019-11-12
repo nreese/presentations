@@ -37,6 +37,21 @@ async function createIndex() {
         properties: {
           location: {
             type: 'geo_point'
+          },
+          case_age_days: {
+            type: 'short'
+          },
+          council_district: {
+            type: 'short'
+          },
+          date_requested: {
+            type: 'date'
+          },
+          date_updated: {
+            type: 'date'
+          },
+          comm_plan_code: {
+            type: 'short'
           }
         }
       },
