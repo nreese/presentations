@@ -1,0 +1,16 @@
+{
+  "name": "live_flights",
+  "version": "1.0.0",
+  "description": "Load live flight data from opensky into Elasticsearch",
+  "main": "load_flights.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nathan reese",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@elastic/elasticsearch": "^7.4.0",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.8"
+  }
+}
