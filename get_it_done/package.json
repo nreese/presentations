@@ -1,0 +1,15 @@
+{
+  "name": "live_flights",
+  "version": "1.0.0",
+  "description": "Load San Diego Get It Done data, non-emergency problems submitted by users",
+  "main": "load.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nathan reese",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@elastic/elasticsearch": "^7.4.0",
+    "csv-parser": "^2.3.2"
+  }
+}
