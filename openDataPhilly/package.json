@@ -1,0 +1,15 @@
+{
+  "name": "openDataPhilly",
+  "version": "1.0.0",
+  "description": "",
+  "main": "load.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nathan reese",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@elastic/elasticsearch": "^7.5.0",
+    "oboe": "^2.1.5"
+  }
+}
