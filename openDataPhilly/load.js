@@ -76,7 +76,10 @@ async function ingest() {
         }
       }
     })
-    .done(()=>{
+    .done(async ()=> {
+      if (docs.length) {
+        await bulkInsert(docs);
+      }
       console.log(`done processing, rejected ${invalidDocsCount} features`);
     });
 }
