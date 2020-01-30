@@ -4,7 +4,7 @@ const { Client } = require('@elastic/elasticsearch');
 const rp = require('request-promise-native');
 
 const client = new Client({
-  node: 'http://127.0.0.1:9201',
+  node: 'http://127.0.0.1:9200',
   auth: {
     username: 'elastic',
     password: 'changeme'
