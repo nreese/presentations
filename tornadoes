@@ -9,3 +9,6 @@ ogr2ogr -lco NOT_ANALYZED_FIELDS={ALL} -lco INDEX_NAME=tornadoes -lco WRITE_MAPP
 
 ogr2ogr -lco NOT_ANALYZED_FIELDS={ALL} -lco INDEX_NAME=tornadoes -lco OVERWRITE_INDEX=YES -lco MAPPING=./mapping.json ES:http://elastic:changeme@localhost:9200 1950-2018-torn-aspath.shp
 
+// runtime fields
+ISO_3166-2
+emit('US-' + doc['st'].value)
