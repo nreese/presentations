@@ -1,0 +1,11 @@
+https://www.spc.noaa.gov/gis/svrgis/zipped/1950-2018-torn-aspath.zip
+https://www.spc.noaa.gov/wcm/data/SPC_severe_database_description.pdf
+
+brew install gdal
+
+ogrinfo ES:http://elastic:changeme@localhost:9200
+
+ogr2ogr -lco NOT_ANALYZED_FIELDS={ALL} -lco INDEX_NAME=tornadoes -lco WRITE_MAPPING=./mapping.json ES:http://elastic:changeme@localhost:9200 1950-2018-torn-aspath.shp
+
+ogr2ogr -lco NOT_ANALYZED_FIELDS={ALL} -lco INDEX_NAME=tornadoes -lco OVERWRITE_INDEX=YES -lco MAPPING=./mapping.json ES:http://elastic:changeme@localhost:9200 1950-2018-torn-aspath.shp
+
